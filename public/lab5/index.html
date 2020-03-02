@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Lab 5: Pixabay Search</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js" ></script> 
+    <style> 
+           @import url("css/style.css");
+    </style>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        
+</head>
+
+<body style="background-color:rgb(255,255,255);">
+    <h1> Pixabay Image Search </h1>
+    Keyword: <input id="keyword" type="text"></input>
+    <br><br>
+    Orientaion: <select id="orient">
+        <option>Select one</option>
+        <option value="vertical">Vertical</option>
+        <option value="horizontal">Horizontal</option>
+    </select> 
+    <button id="searchBtn"> Search! </button>
+    <div id="images">
+    </div>
+    <script src="js/javascript.js"></script>
+</body>
+</html>
