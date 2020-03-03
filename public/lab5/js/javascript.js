@@ -1,4 +1,5 @@
 /*global $*/
+/*global _*/
 $(document).ready(function(){
     
     $("#searchBtn").on("click", search);

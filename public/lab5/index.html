@@ -1,30 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Lab 5: Pixabay Search</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src = "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js" ></script> 
-    <style> 
-           @import url("css/style.css");
-    </style>
-    <link href="css/styles.css" rel="stylesheet" type="text/css" />
-        
-</head>
+<title> Midterm Review </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style>
+body {
+text-align: center;
+background: #A1D9BC;
+font: #0000A0;
+}
+img {
+border-radius: 20px;
+}
+button{
+background: blue;
+border-radius: 25px;
+height: 25px;
+}
 
-<body style="background-color:rgb(255,255,255);">
-    <h1> Pixabay Image Search </h1>
-    Keyword: <input id="keyword" type="text"></input>
-    <br><br>
-    Orientaion: <select id="orient">
-        <option>Select one</option>
-        <option value="vertical">Vertical</option>
-        <option value="horizontal">Horizontal</option>
-    </select> 
-    <button id="searchBtn"> Search! </button>
-    <div id="images">
-    </div>
-    <script src="js/javascript.js"></script>
+</style>
+</head>
+<body>
+
+<h1> Random Dog Gallery </h1>
+Please enter the number of random images you would like to generate <br>
+Number of Images: <input type="text" id="keyword"/> 
+<script>
+function searchImage() {
+$.ajax({
+    type: "GET",
+    url: "https://dog.ceo/api/breeds/image/random/" + keyword,
+    dataType: "json",
+    success: function(data, status) {
+        $('#image').html("<img src='"+ message +"' width='500'>");
+        console.log("Test");
+        }
+    }); //ajax 
+}//searchImage()
+</script>
+<button onclick="searchImage()"> Generate </button>
+<br /><br />
+
+<div id="image"></div>
+
 </body>
 </html>
