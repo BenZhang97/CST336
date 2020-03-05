@@ -1,30 +1,9 @@
-<!DOCTYPE html>
+<!DOCTYPE.html>
 <html>
-  <head>  </head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link rel="stylesheet" type="text/css" href="app.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-</head>
-<body>
-  <div class="container">
-      <div class="jumbotron">
-          <h1> Open Library</h1>
-          <p>Please enter the ISBN of the book you'd like to retrieve</p><br>
-          <form action="/" method="post" onsubmit="buildGallery(); return false;">
-				<div class="form-group row">
-					<label for="ISBN" class="col-sm-2 col-form-label">ISBN</label>
-					<div class="col-sm-4">
-						<input type="text" class="form-control" id="number-images" required>
-					</div>
-					<div class="col-sm-6">
-						<button type="Query" class="btn btn-primary">Query</button>
-					</div>
-				</div>
-			</form>
-      </div>
-      <div class="flex-container" id="images"></div>
-  </div>
-  <script type="text/javascript" src="app.js"></script>
-</body>
+    <head>
+        <title>Ben's CST336</title>
+    </head>
+    <body>
+        You are here.
+    </body>
 </html>
