@@ -1,14 +1,20 @@
 /*global $*/
 let buildGallery = function(){
-	$("#images").empty();
-	var url = "https://openlibrary.org/api/books/" + $("#number-images").val();
+	$("#cover").empty();
+	$("#info").empty();
 	$.ajax({
-		url: url,
+		url: "https://openlibrary.org/api/books",
 		type: "GET",
 		dataType: "json",
+		data: {
+		    "format" : "geojson",
+		    "isbn" : $("#isbn-number").val(),
+		    "cover" : $(),
+		    
+		},
 		success: function(data){
 			data.message.forEach(function(src){
-				$("#images").append("<div class=\"img-thumbnail flex-item\"><img src=\""+src+"\"></div>");
+				$("#cover").append("<div class=\"img-thumbnail flex-item\"><img src=\""+src+"\"></div>");
 			});
 		},
 		error: function(err){
