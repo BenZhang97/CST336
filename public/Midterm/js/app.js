@@ -1,7 +1,13 @@
 /*global $*/
-var buildGallery = function(){
+var title = $("#title");
+var author = $("#author");
+var publishYear = $("#publish-year");
+var publisher = $("#publisher");
+var isbn = $("#isbn");
+var pages = $("#pages")
+let buildGallery = function(){
 	$("#images").empty();
-	var url = "https://dog.ceo/api/breeds/image/random/" + $("#number-images").val();
+	var url = "https://openlibrary.org/api/books/" + $("#number-images").val();
 	$.ajax({
 		url: url,
 		type: "GET",
