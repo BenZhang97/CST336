@@ -18,8 +18,8 @@ $(document).ready(function(){
                 $("#images").html('')  
                 for(let i=0; i<4; i++){
                     $("#images").append(`<div>Likes: ${result.hits[i].likes} <br> 
-                    <img width="200" src='${result.hits[i].webformatURL}'</div>`);
-                }
+                    <img width="200" src='${result.hits[i].webformatURL}'></div>`);
+              }
             }   
             });//ajax
     }//search()

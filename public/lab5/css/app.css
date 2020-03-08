@@ -1,0 +1,22 @@
+h1{
+  color:black;
+  background:white;
+  text-align:center;
+  font-family: "Times New Roman",Georgia,Serif
+}
+div{
+  width: 400px;
+  height: 410px;
+  align-content: center;
+}
+body{
+    text-align:center;
+}
+.flex-item {
+	width: 30%;
+	margin: 10px;
+}
+
+.flex-item > img {
+	width: 100%;
+}
