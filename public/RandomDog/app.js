@@ -1,5 +1,4 @@
-/*global $*/
-var buildGallery = function(){
+let buildGallery = function(){
 	$("#images").empty();
 	var url = "https://dog.ceo/api/breeds/image/random/" + $("#number-images").val();
 	$.ajax({
