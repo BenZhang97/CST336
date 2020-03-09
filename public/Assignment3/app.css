@@ -1,0 +1,31 @@
+#background{
+    background: white;
+    background-image: url("weather-forecast.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.jumbotron{
+	color: #2c3e50;
+	background: #ecf0f1;
+    font-family: "Times New Roman",Georgia,Serif;
+}
+
+#results{
+    display: inline-block;
+    text-align: left;
+    color: black;
+    font-family: "Times New Roman",Georgia,Serif;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+h1{
+    color: rgb(37, 204, 225);
+    font-weight: bolder;
+    font-style:oblique
+}
+
+p{
+    font-size: medium
+}
