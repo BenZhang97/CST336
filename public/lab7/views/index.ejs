@@ -2,6 +2,7 @@
 <html>
     <head>
         <title> Pixabay Search (Express Version) </title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
     <body>
 
@@ -9,12 +10,15 @@
         
         <form action="/results" method="GET">
             
-            Keyword: <input type="text" name="keyword">
+            Keyword: <input type="text" name="keyword"><br>
+            Orientation: <select id="position" name="verticalHorizontal">
+        		<option value="">Select one</option>
+    	   		<option value="vertical">Vertical</option>
+    	    	<option value="horizontal">Horizontal</option>
+    	    	</select>
             <button> Search! </button>
             
         </form> <br>
-        
-        <img src='<%=image%>'>
 
     </body>
 </html>
