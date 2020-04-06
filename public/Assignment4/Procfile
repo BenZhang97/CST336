@@ -1,1 +1,1 @@
-web: public/Assignments4 node index.js
+web: node index.js
