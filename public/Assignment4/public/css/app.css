@@ -1,0 +1,15 @@
+nav a {
+    padding: 15px;
+    padding-bottom: 4px;
+    font-size: 150%;
+    text-decoration: none;
+    color: black;
+    font-family: serif;
+}
+
+header {
+    font-family: serif;
+    font-weight: bolder;
+    font-size: 200%;
+    font-style: oblique;
+}

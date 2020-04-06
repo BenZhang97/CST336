@@ -1,0 +1,75 @@
+<%- include('partials/header.ejs') %>
+        <header>
+            <h1>
+                Database Management System
+            </h1>
+        </header>
+        <nav>
+            <a href="/">HOME</a>
+            <a href="/dbms"  id="current">DBMS</a>
+            <a href="/os">OS</a>
+            <a href="/SDLC">SDLC</a>
+        </nav>
+        <br/><br/>
+        <figure>
+            <img src="img/DBMS.jpg" width="75%" id="cpluspluspic" alt="picture"/>
+        </figure>
+        
+    <div class="content">
+
+    <h2>Introduction:</h2><hr>
+    
+    <p><br>
+    
+    A DBMS makes it possible for end users to create, read, update and delete data in a database. The DBMS essentially serves as an interface between the database and end users or application programs, ensuring that data is consistently organized and remains easily accessible.
+    
+    The DBMS manages three important things: the data, the database engine that allows data to be accessed, locked and modified -- and the database schema, which defines the database’s logical structure. These three foundational elements help provide concurrency, security, data integrity and uniform administration procedures. Typical database administration tasks supported by the DBMS include change management, performance monitoring/tuning and backup and recovery. Many database management systems are also responsible for automated rollbacks, restarts and recovery as well as the logging and auditing of activity.
+    
+    The DBMS is perhaps most useful for providing a centralized view of data that can be accessed by multiple users, from multiple locations, in a controlled manner. A DBMS can limit what data the end user sees, as well as how that end user can view the data, providing many views of a single database schema. End users and software programs are free from having to understand where the data is physically located or on what type of storage media it resides because the DBMS handles all requests.
+    
+    The DBMS can offer both logical and physical data independence. That means it can protect users and applications from needing to know where data is stored or having to be concerned about changes to the physical structure of data (storage and hardware). As long as programs use the application programming interface (API) for the database that is provided by the DBMS, developers won't have to modify programs just because changes have been made to the database.
+    
+    </p><hr>
+
+    <p>
+    
+    <b>Advantages of a DBMS</b><br>
+    
+    Using a DBMS to store and manage data comes with advantages, but also overhead. One of the biggest advantages of using a DBMS is that it lets end users and application programmers access and use the same data while managing data integrity. Data is better protected and maintained when it can be shared using a DBMS instead of creating new iterations of the same data stored in new files for every new application. The DBMS provides a central store of data that can be accessed by multiple users in a controlled manner.
+    
+    Central storage and management of data within the DBMS provides:
+    
+    Data abstraction and independence
+    
+    Data security
+    
+    A locking mechanism for concurrent access
+    
+    An efficient handler to balance the needs of multiple applications using the same data
+    
+    The ability to swiftly recover from crashes and errors, including restartability and recoverability
+    
+    Robust data integrity capabilities
+    
+    Logging and auditing of activity
+    
+    Simple access using a standard application programming interface (API)
+    
+    Uniform administration procedures for data
+    
+    Another advantage of a DBMS is that it can be used to impose a logical, structured organization on the data. A DBMS delivers economy of scale for processing large amounts of data because it is optimized for such operations.
+    
+    A DBMS can also provide many views of a single database schema. A view defines what data the user sees and how that user sees the data. The DBMS provides a level of abstraction between the conceptual schema that defines the logical structure of the database and the physical schema that describes the files, indexes and other physical mechanisms used by the database. When a DBMS is used, systems can be modified much more easily when business requirements change. New categories of data can be added to the database without disrupting the existing system and applications can be insulated from how data is structured and stored.
+    
+    Of course, a DBMS must perform additional work to provide these advantages, thereby bringing with it the overhead. A DBMS will use more memory and CPU than a simple file storage system. And, of course, different types of DBMSes will require different types and levels of system resources.
+    
+    </p>
+    
+    <br>
+    
+    <b>Link:<a style="color:black;" href="https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=0ahUKEwjStI7Hq6XaAhVBN48KHY17DlcQFggvMAI&url=http%3A%2F%2Fsearchsqlserver.techtarget.com%2Fdefinition%2Fdatabase-management-system&usg=AOvVaw1djIvH7q3K0tgZVA6XLjSh">Database Management System</a></b>
+    
+    </div>
+
+        
+<%- include('partials/footer.ejs') %>
